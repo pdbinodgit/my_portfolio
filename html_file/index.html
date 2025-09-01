@@ -22,44 +22,63 @@
             background-color: rgb(10, 10, 42);
             color: white;
         }
-        nav{
+
+        nav {
             display: flex;
-            justify-content:space-around;
+            justify-content: space-around;
             align-items: center;
             height: 100px;
             background-color: rgb(16, 16, 70);
         }
-        nav ul{
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
 
-        .left{
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(82, 109, 163);
+            font-size: 1.01rem;
+        }
+
+        .left {
             font-size: 1.9rem;
         }
 
         /* section part css*/
-        .first-section{
+        .first-section {
             margin: 40px;
             display: flex;
             justify-content: space-around;
         }
-        .first-section >div{
+
+        .first-section>div {
             width: 30%;
         }
-        .first-left-section{
+
+        .first-left-section {
             font-size: 1.8rem;
             margin-top: 30px;
         }
-        .first-right-section img{
+
+        .first-right-section img {
             width: 100%;
-    
+
         }
 
+        #element{
+            color: blueviolet;
+        }
     </style>
 </head>
 
@@ -69,11 +88,11 @@
             <div class="left">Bishnu's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -83,13 +102,28 @@
             <div class="first-left-section">
                 Hello guys , my name is Bishnu Prasad Pandey
                 <div>Passionate Web Developer with a focus on creating modern and user-friendly designs.</div>
-            </div>
-            <div class="first-right-section">
-                <img src="/image/image2.png" alt="" >
-            </div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
 
-        </section>
-    </main>
+                <!-- Load library from the CDN -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <!-- Setup and start animation! -->
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Java Developer!!','React developer!!'],
+                        typeSpeed: 100,
+                    });
+                </script>
+</body>
+
+</div>
+<div class="first-right-section">
+    <img src="/image/image2.png" alt="">
+</div>
+
+</section>
+</main>
 
 </body>
 
