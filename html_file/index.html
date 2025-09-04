@@ -11,189 +11,27 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Cursive;
-        }
-
-        body {
-            background-color: rgb(10, 10, 42);
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(16, 16, 70);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(82, 109, 163);
-            font-size: 1.01rem;
-        }
-
-        .left {
-            font-size: 1.9rem;
-        }
-
-        main hr {
-            border: 0;
-            background-color: rgb(153, 153, 226);
-            height: 0.075rem;
-            margin: 40px 80px;
-        }
-
-        /* section first css*/
-        .first-section {
-            margin: 145px;
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        .first-section>div {
-            width: 30%;
-        }
-
-        .first-left-section {
-            font-size: 1.8rem;
-            margin-top: 30px;
-        }
-
-        .first-right-section img {
-            clip-path: circle(42%);
-            width: 100%;
-
-        }
-
-        #element {
-            color: blueviolet;
-        }
-
-        /* second-section css*/
-        .second-section {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-            margin-bottom: 200px;
-        }
-
-        .second-section h1 {
-            font-size: 2.5rem;
-
-        }
-
-        .text-gray {
-            color: gray;
-            font-size: 0.8rem;
-        }
-
-        .experince-horizontal-line {
-            background-color: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        /* .experince-vertical-line {
-            height: 80px;
-            width: 0.1px;
-            background-color: white;
-            margin: 0 100px;
-        } */
-
-        .experince-heading {
-            margin: 0 0 55px;
-        }
-
-        .experince-junior {
-            display: flex;
-            margin-right: 100px;
-        }
-
-        .experince-junior img {
-            width: 35px;
-            margin-right: 15px;
-        }
-
-        .junior-heading {
-
-            font-size: 2rem;
-            margin-bottom: 35px;
-        }
-
-        .experince-junior-company {
-            display: flex;
-            margin-right: 100px;
-        }
-
-        .experince-junior-company img {
-            width: 35px;
-            margin-right: 15px;
-        }
-
-        .experince-junior-date {
-            display: flex;
-            margin-right: 100px;
-        }
-
-        .experince-junior-date img {
-            width: 25px;
-            margin-right: 15px;
-        }
-
-        .experince-junior-company {
-            font-size: 1.4rem;
-        }
-
-        .experince-junior-desc{
-            margin-top: 20px;
-            margin-left: 100px;
-        }
-        .experince-intern-level{
-            margin-top: 100px;
-        }
-    </style>
+        <link rel="stylesheet" href="/css_file/index.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header id="header">
+        <nav id="home">
             <div class="left">Bishnu's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hr-style2">Work Experience</a></li>
                     <li><a href="/">Services</a></li>
                     <li><a href="/">Projects</a></li>
-                    <li><a href="/">Work Experience</a></li>
                     <li><a href="/">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="first-section">
+        <section id="about" class="first-section">
             <div class="first-left-section">
                 Hello guys , my name is Bishnu Prasad Pandey
                 <div>Passionate Web Developer with a focus on creating modern and user-friendly designs.</div>
@@ -217,8 +55,8 @@
             </div>
 
         </section>
-        <hr class="hr-style">
-        <section class="second-section">
+        <hr class="hr-style" id="hr-style2">
+        <section id="workexperince" class="second-section">
             <span class="text-gray">what i have done so far</span>
             <h1 class="experince-heading">Work Experince</h1>
             <div class="experince-junior-level">
@@ -239,9 +77,9 @@
                 <div class="experince-junior-desc">
                     <ul>
                         <li>Contributed to the enhancement of key ERP modules including Project
-                        Management,Customer Management, and Suppiler Management.</li>
+                            Management,Customer Management, and Suppiler Management.</li>
                         <li> Developed, integrated , and tested new modules to ensure seamless system
-                        functionality.</li>
+                            functionality.</li>
                         <li> Managed extensive data processing, ensuring high system efficiency.</li>
                     </ul>
                 </div>
@@ -275,7 +113,7 @@
             </div>
 
         </section>
-         <hr class="hr-style">
+        <hr class="hr-style">
 
     </main>
 
